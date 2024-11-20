@@ -9,11 +9,9 @@ const Card = ({ title, description, imageSrc }) => {
       <Image
         src={imageSrc}
         alt={title}
-        boxSize="200px"
-        objectFit="cover"
         borderRadius="md"></Image>
       <Heading size="md">{title}</Heading>
-      <Text>{description}</Text>
+      <Text color="#64748b" fontSize="lg">{description}</Text>
       <HStack>
         <Text color="teal.500">See more</Text><FontAwesomeIcon icon={faArrowRight} size="1x"/>
       </HStack>
