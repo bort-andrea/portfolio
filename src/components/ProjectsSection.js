@@ -5,35 +5,39 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Personal Website",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      "Un portfolio sviluppato in HTML, CSS e Javascript completamente responsivo",
     getImageSrc: () => require("../images/photo1.jpg"),
+    url: "https://bort-andrea.github.io/"
   },
   {
-    title: "React Infinite Scroll",
+    title: "Fake Reddit",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      "Una web APP che simula reddit, si può selezionare la subreddit preferita e visionare gli ultimi post pubblicati",
     getImageSrc: () => require("../images/photo2.jpg"),
+    url: "https://fakereddit.netlify.app/"
   },
   {
-    title: "Photo Gallery",
+    title: "Jamming Playlist",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+      "Una web APP che interagisce con Spotify. Si può ricercare canzoni e aggiungerle in una propria playlist personale",
     getImageSrc: () => require("../images/photo3.jpg"),
+    url:"https://react-jamming-playlist.netlify.app/"
   },
   {
-    title: "Event planner",
+    title: "VC Experience",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
+      "Una landing page aziendale e responsiva.",
     getImageSrc: () => require("../images/photo4.jpg"),
+    url: "https://github.com/bort-andrea/VC_Experience"
   },
 ];
 
 const ProjectsSection = () => {
   return (
     <FullScreenSection
-      backgroundColor="#14532d"
+      backgroundColor="#4487e3"
       isDarkBackground
       p={8}
       alignItems="flex-start"
@@ -53,6 +57,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            url={project.url}
           />
         ))}
       </Box>

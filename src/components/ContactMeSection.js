@@ -84,10 +84,10 @@ const ContactMeSection = () => {
               </FormControl> 
               <FormControl> 
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel> 
-                <Select id="type" name="type" {...formik.getFieldProps("type")}> 
-                  <option value="hireMe">Freelance project proposal</option> 
+                <Select id="type" name="type" {...formik.getFieldProps("type")} color={"black"}> 
+                  <option value="hireMe">Proposta di progetto Freelance</option> 
                   <option value="openSource"> 
-                    Open source consultancy session 
+                    Consulenza 
                   </option> 
                   <option value="other">Other</option> 
                 </Select> 
@@ -98,7 +98,8 @@ const ContactMeSection = () => {
                   id="comment" 
                   name="comment" 
                   height={250} 
-                  {...formik.getFieldProps("comment")} 
+                  {...formik.getFieldProps("comment")}
+                  placeholder={"Questo form simula solamente un invio"} 
                 /> 
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage> 
               </FormControl> 
